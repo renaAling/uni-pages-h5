@@ -1,0 +1,117 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^common-(.*)": "@/components/common/common-$1.vue",
+      "^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/launch/index",
+      "style": {
+        "navigationBarTitleText": "轨道生活",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/error/index",
+      "style": {
+        "navigationBarTitleText": "出错了",
+        "navigationStyle": "custom"
+      }
+    },
+    // 商务合作 start
+    {
+      "path": "pages/business/list",
+      "style": {
+        "navigationBarTitleText": "商务合作",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/business/details",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/business/succeed",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    // 商务合作 end
+    // 快递闪送 start
+    {
+      "path": "pages/express/index",
+      "style": {
+        "navigationBarTitleText": "寄快递",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/express/create",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/express/succeed",
+      "style": {
+        "navigationBarTitleText": "支付结果",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/express/address",
+      "style": {
+        "navigationBarTitleText": "地址簿",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/express/address-editor",
+      "style": {
+        "navigationBarTitleText": "地址簿",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/express-order/list",
+      "style": {
+        "navigationBarTitleText": "订单",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/express-order/order-details",
+      "style": {
+        "navigationBarTitleText": "订单详情",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/express-order/order-comment",
+      "style": {
+        "navigationBarTitleText": "评价",
+        "navigationStyle": "custom"
+      }
+    }
+    // 商务合作 end
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "轨道生活",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  }
+}

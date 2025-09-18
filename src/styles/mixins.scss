@@ -1,0 +1,43 @@
+/* border盒模型 */
+@mixin borderBox {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// 垂直居中
+@mixin flex-vc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// 水平居中
+@mixin flex-hc {
+  display: flex;
+  align-items: center;
+}
+
+// 水平居中左右分开
+@mixin flex-hcb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 垂直水平居中
+@mixin flex-vhc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 文本换行省略号 */
+@mixin ellipsis-multiLine($line) {
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
